@@ -31,5 +31,5 @@ app.set('view engine', 'handlebars');
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+    app.listen(PORT, () => console.log(`Server is running. Open http://localhost:${PORT} in your browser.`));
 });
