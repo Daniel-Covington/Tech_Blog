@@ -3,7 +3,8 @@ const routes = require('./routes');
 const sequelize = require('./config/connection');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const handlebars = require('express-handlebars');
+const exphbs = require('express-handlebars').create({ defaultLayout: 'main' }); 
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
+app.engine('handlebars', exphbs.engine); // Updated line
 app.set('view engine', 'handlebars');
 
 app.use(routes);
