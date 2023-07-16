@@ -31,5 +31,5 @@ To run tests, you will need to write your own tests and install a testing librar
 
 ## Questions
 GitHub Profile: [https://github.com/Daniel-Covington/Tech_Blog](https://github.com/Daniel-Covington/Tech_Blog)<br>
-GitHub Profile: [https://frozen-dawn-58710-5c3f95f08e89.herokuapp.com/](https://frozen-dawn-58710-5c3f95f08e89.herokuapp.com/)<br>
+Heroku Deployment: [https://frozen-dawn-58710-5c3f95f08e89.herokuapp.com/](https://frozen-dawn-58710-5c3f95f08e89.herokuapp.com/)<br>
 For further questions, you can reach me at DanielmCovington@gmail.com
