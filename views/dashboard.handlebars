@@ -5,6 +5,24 @@
   <p>This is where you can view and manage your posts.</p>
 </div>
 
+<!-- Form for creating a new post -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Create a new post</h5>
+    <form id="new-post-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea class="form-control" id="content" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Your Posts</h5>
@@ -14,12 +32,9 @@
       <div class="card-body">
         <h5 class="card-title">{{this.title}}</h5>
         <p class="card-text">{{this.content}}</p>
-        <a href="/posts/{{this.id}}" class="btn btn-primary">View Post</a>
-        <a href="/posts/{{this.id}}/edit" class="btn btn-secondary">Edit Post</a>
       </div>
     </div>
     {{/each}}
-
-    <a href="/posts/new" class="btn btn-success mt-4">Create New Post</a>
   </div>
 </div>
+<script src="/js/new_post.js"></script>
